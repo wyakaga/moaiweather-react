@@ -16,6 +16,9 @@ module.exports = {
       },
     },
     extend: {
+      backgroundImage : {
+        "not-found": "url('/src/assets/not-found.webp')"
+      },
       fontFamily: {
         inter: ["Inter", "sans-serif"]
       },
