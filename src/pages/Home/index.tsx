@@ -79,7 +79,7 @@ function Home() {
 					<TooltipProvider>
 						<Tooltip>
 							<TooltipTrigger asChild>
-								<Link to={"https://www.github.com/wyakaga"}>
+								<Link to={"https://www.github.com/wyakaga/moaiweather-react"}>
 									<Button variant={"secondary"} size={"icon"}>
 										<GitHubLogoIcon className="h-4 w-4" />
 									</Button>
