@@ -1,6 +1,7 @@
 import { CLOUD_FOLDER } from "@/constants/cloudinary"
 
-const setBg = (id: number) => {
+const setBg = (id?: number) => {
+  if (!id) return undefined
   if (id >= 200 && id <= 232) return `${CLOUD_FOLDER}thunderstorm`
   if (id >= 300 && id <= 321) return `${CLOUD_FOLDER}drizzle`
   if (id >= 500 && id <= 531) return `${CLOUD_FOLDER}rain`
