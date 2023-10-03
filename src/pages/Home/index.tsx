@@ -34,6 +34,7 @@ import setBg from "@/utils/setBg";
 import regionConvert from "@/utils/regionConvert";
 import setDate from "@/utils/setDate";
 import setIcon from "@/utils/setIcon";
+import useDocumentTitle from "@/utils/useDocumentTitle";
 import cityData from "@/constants/cityData";
 
 function Home() {
@@ -53,6 +54,8 @@ function Home() {
   const handleSelect = (e: string) => {
     setCity(e);
   };
+
+  useDocumentTitle("Moai Weather");
 
   return (
     <div className="body-wrapper grid grid-cols-1 grid-rows-1 relative">

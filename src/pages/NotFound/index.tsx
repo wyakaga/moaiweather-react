@@ -1,13 +1,12 @@
-import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { ChevronLeft } from "lucide-react";
+
+import useDocumentTitle from "@/utils/useDocumentTitle";
 
 function NotFound() {
   const navigate = useNavigate();
 
-  useEffect(() => {
-    document.title = "Not Found";
-  }, []);
+  useDocumentTitle("Not Found");
 
   return (
     <div className="flex justify-center min-h-screen p-5 md:p-40 bg-not-found bg-cover bg-no-repeat bg-center">
